@@ -142,7 +142,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="pch.h" />
-    <ClInclude Include="Table.h" />
+    <ClInclude Include="NamedTable.h" />
     <ClInclude Include="TableBody.h" />
   </ItemGroup>
   <ItemGroup>

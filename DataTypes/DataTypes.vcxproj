@@ -142,22 +142,20 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="BaseDataType.h" />
+    <ClInclude Include="IMultiplyable.h" />
     <ClInclude Include="Integer.h" />
-    <ClInclude Include="IDataType.h" />
+    <ClInclude Include="IDataTypeValidator.h" />
+    <ClInclude Include="ISummable.h" />
     <ClInclude Include="pch.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Integer.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Operations\Operations.vcxproj">
-      <Project>{e5f40147-7c73-4dd9-acc2-b7c496f718bb}</Project>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

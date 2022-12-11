@@ -1,45 +1,35 @@
 #pragma once
 
 #include <string>
-#include "IDataType.h"
-#include "Operations/IOperation.h"
+#include "IDataTypeValidator.h"
 
 namespace DataTypes
 {
-    template<class TChild>
+    template<class T>
     class BaseDataType;
 }
 
-template<class TChild>
-class DataTypes::BaseDataType : 
-    public DataTypes::Interfaces::IDataType
-    //, public Operations::Interfaces::IOperation<TChild>
+template<class T>
+class DataTypes::BaseDataType : public DataTypes::Interfaces::IDataTypeValidator<T>
 {
-    using string = std::string;
-
-    string _object;
+    T _value;
 protected:
-    BaseDataType(string& object)
+    BaseDataType(T& value)
     {
-        _object = object;
+        _value = value;
     }
 public:
-    inline const string& GetObject()
+    inline const T& GetObject()
     {
-        return _object;
+        return _value;
     };
 
-    const string& SetObject(string& newObject)
+    const void SetObject(const T& newObject)
     {
         Validate(newObject);
-        _object = newObject;
+        _value = newObject;
     }
 
-    void Execute(Operations::Interfaces::IOperation<string>& object)
-    {
-        object.ExecuteOperation(_object);
-    }
-
-    // Inherited via ITableDataType
-    virtual void Validate(const string& object) = 0;
+    // Inherited via IDataTypeValidator
+    virtual void Validate(const T& value) const = 0;
 };

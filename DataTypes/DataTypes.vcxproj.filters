@@ -21,7 +21,7 @@
     <ClInclude Include="pch.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="IDataType.h">
+    <ClInclude Include="IDataTypeValidator.h">
       <Filter>Header Files\Interfaces</Filter>
     </ClInclude>
     <ClInclude Include="Integer.h">
@@ -30,9 +30,18 @@
     <ClInclude Include="BaseDataType.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="IMultiplyable.h">
+      <Filter>Header Files\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="ISummable.h">
+      <Filter>Header Files\Interfaces</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="pch.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Integer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
