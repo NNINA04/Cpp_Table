@@ -13,5 +13,5 @@ template<class T>
 class DataTypes::Interfaces::IMultiplyable
 {
 public:
-    virtual T Multiply(const T& left, const T& right) = 0;
+    virtual T* operator*(const T& other) = 0;
 };

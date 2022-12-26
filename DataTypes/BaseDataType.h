@@ -19,7 +19,7 @@ protected:
         _value = value;
     }
 public:
-    inline const T& GetObject()
+    inline const T& GetObject() const
     {
         return _value;
     };

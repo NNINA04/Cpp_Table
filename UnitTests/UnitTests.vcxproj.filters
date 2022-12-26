@@ -14,20 +14,35 @@
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
     <Filter Include="Source Files\Table">
-      <UniqueIdentifier>{c0e44aef-b10b-462f-96f7-ca5b848b4fdd}</UniqueIdentifier>
+      <UniqueIdentifier>{a63d22c9-9de1-4657-9ad2-8f0393c02ff3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\DataTypes">
+      <UniqueIdentifier>{78eaa19e-d519-4665-8a8b-52a4bd78d57d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Table">
+      <UniqueIdentifier>{9e96f04b-122b-4c5b-a8a6-24685a48d146}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="pch.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Table.cpp">
+    <ClCompile Include="NamedTable.cpp">
+      <Filter>Source Files\Table</Filter>
+    </ClCompile>
+    <ClCompile Include="Integer.cpp">
+      <Filter>Source Files\DataTypes</Filter>
+    </ClCompile>
+    <ClCompile Include="TableBody.cpp">
       <Filter>Source Files\Table</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AuxiliaryObjects.h">
+      <Filter>Header Files\Table</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

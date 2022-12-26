@@ -13,5 +13,5 @@ template<class T>
 class DataTypes::Interfaces::ISummable
 {
 public:
-    virtual T Sum(const T& left, const T& right) = 0;
+    virtual T* operator+(const T& other) = 0;
 };
